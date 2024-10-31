@@ -14,7 +14,7 @@
             <div class="card-body text-center">
                 <img src="{{ asset('images/logo.png') }}" alt="Dukung Logo" style="height: 60px; width: auto; margin-bottom: 20px;">
                 <h3 class="mb-4">Verifikasi Email</h3>
-                <p>Silakan cek email <span class="text-primary">{{ Auth::user()->email }}</span> dan ikuti petunjuk dari pesan yang masuk.</p>
+                <p>Silakan cek email <span class="text-primary">{{ Auth::user()->email }}</span> dan ikuti petunjuk dari pesan yang masuk. Pesan mungkin diterima sebagai spam.</p>
                 @if (session('status') == 'verification-link-sent')
                     <div class="alert alert-success" role="alert">
                         Email verifikasi terkirim
