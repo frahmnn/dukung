@@ -57,7 +57,7 @@
                                             <i class="bi" style="font-size: 1.5rem; margin-right: 10px;"></i>
                                             <div>
                                                 <strong>Proposal</strong>
-                                                <p class="mb-0 text-muted">Anda bisa menambahkan, mengubah, atau menghapus proposal dari event Anda. Dokumen harus kurang dari 50MB.</p>
+                                                <p class="mb-0 text-muted">Anda bisa menambahkan, mengubah, atau menghapus proposal dari event Anda. Dokumen dapat berupa file word atau pdf, dan harus kurang dari 50MB.</p>
                                             </div>
                                         </div>
                                     </li>

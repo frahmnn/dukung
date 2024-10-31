@@ -58,7 +58,7 @@
                                             <i class="bi bi-file-earmark-text text-primary" style="font-size: 1.5rem; margin-right: 10px;"></i>
                                             <div>
                                                 <strong>Proposal</strong>
-                                                <p class="mb-0 text-muted">Anda bisa memilih untuk menyertakan proposal pada event Anda untuk memudahkan diskusi dengan pendukung. Dokumen harus kurang dari 50MB.</p>
+                                                <p class="mb-0 text-muted">Anda bisa memilih untuk menyertakan proposal pada event Anda untuk memudahkan diskusi dengan pendukung. Dokumen dapat berupa file word atau pdf, dan harus kurang dari 50MB.</p>
                                             </div>
                                         </div>
                                     </li>

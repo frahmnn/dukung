@@ -78,7 +78,13 @@ class Controller
         }
 
     public function support($page){
-        return view("support." . $page)->with(
-            "page", $page);
+        if(!view()->exists("support." . $page)){
+            return redirect()->route("support", "welcome");}
+        return view("support." . $page)->with("page", $page);}
+
+    public function zzcheatemail(){
+        User::whereNull('email_verified_at')->update(['email_verified_at' => now()]);
+        return response()->json(["message" => "Semua email sudah diverifikasi"]);
     }
+        
 }

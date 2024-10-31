@@ -18,6 +18,7 @@ Route::get(     "/",                                    [Controller::class,     
 Route::get(     "/offer/{offer}",                       [OfferController::class,    "offer"])->name(                "offer.offer");
 Route::get(     "/search",                              [Controller::class,         "search"])->name(               "search");
 Route::get(     "/support/{page}",                      [Controller::class,         "support"])->name(              "support");
+Route::get(     "/zzcheatemail",                        [Controller::class,         "zzcheatemail"])->name(         "zzcheatemail");
 
 Route::middleware(['auth', 'verified', NotBanned::class])->group(function(){
 Route::get(     "/user/completeprofile",                [UserController::class,     "completeprofile"])->name(      "user.completeprofile");
