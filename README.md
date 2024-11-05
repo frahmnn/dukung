@@ -2,7 +2,7 @@
 
 ## Preview Live
 
-Dukung versi Production dapat diakses di https://dukung.arifrahman.serv00.net/
+Dukung versi Production dapat diakses di https://dukung.arifrahman.serv00.net. D
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
