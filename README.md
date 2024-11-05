@@ -29,8 +29,11 @@ Ini adalah dokumentasi Project. Dokumentasi penggunaan apikasi dapat ditemukan d
 ### Sertifikat Keamanan (untuk Pengembangan)
 - **cacert.pem**: Sertifikat keamanan untuk mengakses layanan eksternal secara aman pada localhost.
 
+### Pengaturan PHP untuk *Localhost*
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Pastikan konfigurasi berikut ditambahkan pada file `php.ini` di environment local Anda agar aplikasi dapat mengakomodasi ukuran maksimal file upload:<br>
+upload_max_filesize = 50M<br>
+post_max_size = 50M<br>
 
 You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
