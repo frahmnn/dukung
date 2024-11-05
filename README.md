@@ -33,15 +33,15 @@ Ini adalah dokumentasi Project. Dokumentasi penggunaan apikasi dapat ditemukan d
 
 ### Pengaturan PHP untuk *Localhost*
 
-Pastikan konfigurasi berikut ditambahkan pada file `php.ini` di environment local Anda agar aplikasi dapat mengakomodasi ukuran maksimal file upload:<br>
-upload_max_filesize = 50M<br>
-post_max_size = 50M<br>
+Pastikan konfigurasi berikut ditambahkan pada file `php.ini` di environment local Anda agar aplikasi dapat mengakomodasi ukuran maksimal file upload:```
+upload_max_filesize = 50M
+post_max_size = 50M```
 
 Untuk memastikan akses langsung ke folder *storage* untuk gambar dan file lainnya di proyek *Dukung*, pastikan menjalankan perintah-perintah berikut di *Command Prompt* pada *localhost*:
 
 ### Membuat Symbolic Link untuk Direktori Penyimpanan
 
-Gunakan perintah di bawah ini untuk membuat *symbolic link* agar file yang diunggah dapat diakses melalui folder `public`. Sesuaikan `path\menuju\dukung` dengan jalur proyek Anda.<br>
-mklink /d path\menuju\dukung\public\images path\menuju\dukung\storage\app\private\images<br>
-mklink /d path\menuju\dukung\public\proposals path\menuju\dukung\storage\app\private\proposals<br>
-mklink /d path\menuju\dukung\public\verifications path\menuju\dukung\storage\app\private\verifications<br>
+Gunakan perintah di bawah ini untuk membuat *symbolic link* agar file yang diunggah dapat diakses melalui folder `public`. Sesuaikan `path\menuju\dukung` dengan jalur proyek Anda.```
+mklink /d path\menuju\dukung\public\images path\menuju\dukung\storage\app\private\images
+mklink /d path\menuju\dukung\public\proposals path\menuju\dukung\storage\app\private\proposals
+mklink /d path\menuju\dukung\public\verifications path\menuju\dukung\storage\app\private\verifications```
