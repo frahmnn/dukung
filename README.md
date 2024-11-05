@@ -2,13 +2,9 @@
 
 ## Preview Live
 
-Dukung versi Production dapat diakses di https://dukung.arifrahman.serv00.net. gunakan email dan password:
+Ini adalah dokumentasi Project. Dokumentasi penggunaan apikasi dapat ditemukan di situs Live bagian "Bantuan." Dukung versi Production dapat diakses di https://dukung.arifrahman.serv00.net.
 
-admin@admin.admin
-<br>
-aaaaaaaa
-
-Untuk mengakses akun admin.
+- Gunakan email "admin@admin.admin" dan password "aaaaaaaa" Untuk mengakses akun admin.
 - Beberapa provider internet dapat memicu error "Maximum execution time of 30 seconds exceeded" saat meminta verifikasi email. Mohon untuk mengganti provider internet saat terdapat error, atau akses melalui https://dukung.arifrahman.serv00.net/zzcheatemail untuk memverifikasi semua email.
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
