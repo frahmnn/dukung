@@ -1,22 +1,34 @@
-<p align="center"><img src="https://dukung.arifrahman.serv00.net/images/logo.png" width="400" alt="Laravel Logo"></p>
+<p align="center"><img src="https://dukung.arifrahman.serv00.net/images/logo.png" width="400"></p>
 
 ## Preview Live
 
-Ini adalah dokumentasi Project. Dokumentasi penggunaan apikasi dapat ditemukan di situs Live bagian "Bantuan." Dukung versi Production dapat diakses di https://dukung.arifrahman.serv00.net.
+Ini adalah dokumentasi Project. Dokumentasi penggunaan apikasi dapat ditemukan di situs Live bagian "Bantuan." *Dukung* versi Production dapat diakses di https://dukung.arifrahman.serv00.net.
 
 - Gunakan email "admin@admin.admin" dan password "aaaaaaaa" Untuk mengakses akun admin.
 - Beberapa provider internet dapat memicu error "Maximum execution time of 30 seconds exceeded" saat meminta verifikasi email. Mohon untuk mengganti provider internet saat terdapat error, atau akses melalui https://dukung.arifrahman.serv00.net/zzcheatemail untuk memverifikasi semua email.
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Dependensi Proyek
 
-## Learning Laravel
+Proyek *Dukung* memerlukan dependensi berikut untuk berjalan dengan baik di lingkungan *localhost*:
+
+### Framework & Backend
+- **Laravel 11**: Framework utama PHP yang digunakan dalam pengembangan aplikasi.
+- **MySQL**: Basis data untuk menyimpan data pengguna, acara, dan interaksi.
+- **GD PHP Library**: Diperlukan untuk pemrosesan gambar (misalnya, untuk mengelola gambar acara).
+- **Pusher**: Digunakan untuk fitur real-time, seperti notifikasi obrolan.
+
+### Autentikasi & Pengelolaan Pengguna
+- **Laravel Breeze**: Paket autentikasi sederhana, mendukung login, pendaftaran, dan reset password.
+
+### UI & Interaksi Frontend
+- **Bootstrap**: Framework CSS yang digunakan untuk mempercepat pengembangan UI.
+- **jQuery**: Digunakan untuk manipulasi DOM secara interaktif.
+- **DataTables**: Plugin jQuery untuk menampilkan tabel dengan fitur pencarian, filter, dan pengurutan.
+- **SortableJS**: Library *drag-and-drop* untuk membuat komponen sortable pada tabel atau daftar.
+
+### Sertifikat Keamanan (untuk Pengembangan)
+- **cacert.pem**: Sertifikat keamanan untuk mengakses layanan eksternal secara aman pada localhost.
+
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
