@@ -33,9 +33,11 @@ Ini adalah dokumentasi Project. Dokumentasi penggunaan apikasi dapat ditemukan d
 
 ### Pengaturan PHP untuk *Localhost*
 
-Pastikan konfigurasi berikut ditambahkan pada file `php.ini` di environment local Anda agar aplikasi dapat mengakomodasi ukuran maksimal file upload:```
+Pastikan konfigurasi berikut ditambahkan pada file `php.ini` di environment local Anda agar aplikasi dapat mengakomodasi ukuran maksimal file upload:
+```
 upload_max_filesize = 50M
-post_max_size = 50M```
+post_max_size = 50M
+```
 
 Untuk memastikan akses langsung ke folder *storage* untuk gambar dan file lainnya di proyek *Dukung*, pastikan menjalankan perintah-perintah berikut di *Command Prompt* pada *localhost*:
 
