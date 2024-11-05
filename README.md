@@ -9,12 +9,12 @@ Ini adalah dokumentasi Project. Dokumentasi penggunaan apikasi dapat ditemukan d
 
 ## Dependensi Proyek
 
-Proyek *Dukung* memerlukan dependensi berikut untuk berjalan dengan baik di lingkungan *localhost*:
+*Dukung* memerlukan dependensi berikut untuk berjalan dengan baik di lingkungan *localhost*:
 
 ### Framework & Backend
 - **Laravel 11**: Framework utama PHP yang digunakan dalam pengembangan aplikasi.
 - **MySQL**: Basis data untuk menyimpan data pengguna, acara, dan interaksi.
-- **GD PHP Library**: Diperlukan untuk pemrosesan gambar (misalnya, untuk mengelola gambar acara).
+- **GD PHP Library**: Diperlukan untuk pemrosesan gambar.
 - **Pusher**: Digunakan untuk fitur real-time, seperti notifikasi obrolan.
 
 ### Autentikasi & Pengelolaan Pengguna
