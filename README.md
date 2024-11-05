@@ -43,7 +43,9 @@ Untuk memastikan akses langsung ke folder *storage* untuk gambar dan file lainny
 
 ### Membuat Symbolic Link untuk Direktori Penyimpanan
 
-Gunakan perintah di bawah ini untuk membuat *symbolic link* agar file yang diunggah dapat diakses melalui folder `public`. Sesuaikan `path\menuju\dukung` dengan jalur proyek Anda.```
+Gunakan perintah di bawah ini untuk membuat *symbolic link* agar file yang diunggah dapat diakses melalui folder `public`. Sesuaikan `path\menuju\dukung` dengan jalur proyek Anda.
+```
 mklink /d path\menuju\dukung\public\images path\menuju\dukung\storage\app\private\images
 mklink /d path\menuju\dukung\public\proposals path\menuju\dukung\storage\app\private\proposals
-mklink /d path\menuju\dukung\public\verifications path\menuju\dukung\storage\app\private\verifications```
+mklink /d path\menuju\dukung\public\verifications path\menuju\dukung\storage\app\private\verifications
+```
