@@ -20,6 +20,7 @@
                             <div class="card-body">
                                 <h3 class="card-title">Informasi Akun</h3>
                                 <p>Halaman ini memuat informasi akun Anda yang dapat diedit: nama, foto profil, email, dan password. Anda harus terlebih dahulu memverifikasi email baru sebelum menyelesaikan penggantian email.</p>
+                                <small class="text-muted" style="margin-top: -15px; margin-bottom: 15px; display: block;">Pesan mungkin diterima sebagai spam.</small>
 
                                 <h5>Statistik</h5>
                                 <p>Statistik ini juga dapat dilihat oleh rekan diskusi Anda di <a href="{{ route('support', 'halaman-diskusi') }}">halaman diskusi</a>.</p>

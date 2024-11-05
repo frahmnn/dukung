@@ -146,9 +146,9 @@
                                     <button type="submit" class="btn btn-success mt-2">Tambah proposal</button>
                                 @endif
                             </form>
-                            <form method="POST" action="{{ route('offer.delete', $offer->id) }}" class="mt-3" onsubmit="return confirm('Hapus foto profil?');">
+                            <form method="POST" action="{{ route('offer.delete', $offer->id) }}" class="mt-3" onsubmit="return confirm('Hapus event?');">
                                 @csrf
-                                <button type="submit" class="btn btn-danger w-100">Hapus penawaran</button>
+                                <button type="submit" class="btn btn-danger w-100">Hapus event</button>
                             </form>
                         </div>
                     </div>
@@ -242,7 +242,7 @@
                                     <?php
                                     echo $interestees[$chatroom->interestee]->organization ?? 'Individu';
                                     if (isset($verifications[$chatroom->interestee])) {
-                                        echo ' <span class="badge bg-success">v</span>';
+                                        echo '<i class="fas fa-check-circle text-success ms-1" title="Verified"></i>';
                                     } ?>
                                 </td>
                                 <td><?php echo date('d M Y', strtotime($chatroom->created_at)); ?></td>
@@ -257,7 +257,6 @@
 </html>
 <script src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
 <script>
-    const myevent = document.getElementById("myevent");
     const myevent = document.getElementById("myevent");
     const userId = "<?php echo Auth::user()->id;?>";
     const sfx = new Audio('/notification.mp3');

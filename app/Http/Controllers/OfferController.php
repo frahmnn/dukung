@@ -29,10 +29,14 @@ class OfferController extends Controller
         //tamperfile
         if($request->hasFile("proposal")){
             $request->file("proposal")->storeAs("proposals/" . $offerid . "/", $request->file("proposal")->getClientOriginalName());}
-        foreach(json_decode($request->order) as $key => $order){
-            $image = $images->first(function($file) use ($order){
-                return $file->getClientOriginalName() == $order;});
-            $image->storeAs("images/posts/" . $offerid . "/", $key . '.' . $image->getClientOriginalExtension());}
+            foreach (json_decode($request->order) as $key => $order) {
+                $image = $images->first(function($file) use ($order) {
+                    return $file->getClientOriginalName() == $order;
+                });
+                $image->storeAs("images/posts/" . $offerid . "/", $key . '.' . $image->getClientOriginalExtension());
+                chmod(storage_path("app/private/images/posts/" . $offerid . "/" . $key . '.' . $image->getClientOriginalExtension()), 0755);
+            }
+            
         Offer::create([
             "id"=>          $offerid,
             "name"=>        $request->name,
@@ -102,6 +106,7 @@ class OfferController extends Controller
                         $image = $images->first(function($file) use ($order){
                             return $file->getClientOriginalName() == $order->name;});
                         $image->storeAs("images/posts/" . $offer . "/", $key . "." . $image->getClientOriginalExtension());
+                        chmod(storage_path("app/private/images/posts/" . $offerid . "/" . $key . '.' . $image->getClientOriginalExtension()), 0755);
                     }}
                 if(is_dir($source . "_old")){
                     File::deleteDirectory($source . "_old");}

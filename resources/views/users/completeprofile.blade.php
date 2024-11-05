@@ -28,7 +28,7 @@
                 <div class="mt-4">
                     <p class="form-label fw-bold">Saya mendaftar sebagai:</p>
                     <div class="d-flex align-items-center gap-3">
-                        <button type="submit" name="individual" class="btn btn-outline-primary">Individu</button>
+                        <button type="submit" name="individual" class="btn btn-primary">Individu</button>
                         <span>atau</span>
                         <div class="input-group">
                             <input type="text" name="organization" class="form-control" placeholder="Asal Organisasi">

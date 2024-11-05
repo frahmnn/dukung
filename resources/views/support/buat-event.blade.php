@@ -22,9 +22,9 @@
                                 <p class="text-muted">
                                     <small>Anda hanya dapat mengunggah event setelah <a href="{{ route('support', 'login-daftar') }}">login</a>.</small>
                                 </p>
-                                <p>
+                                <div class="alert alert-info" role="alert">
                                     Demi menjaga kualitas layanan Dukung, dihimbau untuk membuat event dengan baik dan bertanggung jawab.
-                                </p>
+                                </div>
                                 <ul class="list-unstyled mt-3">
                                     <li class="mb-4">
                                         <div class="d-flex align-items-start">

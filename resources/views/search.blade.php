@@ -53,9 +53,9 @@
                                 <div class="col-6">
                                     @foreach (['Seni & Budaya', 'Olahraga & Kesehatan', 'Amal', 'Kuliner', 'Bahasa', 'Pendidikan', 'Keagamaan', 'Sosial', 'Lingkungan'] as $index => $tag)
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" name="tag_{{ $index + 9 }}" id="tag_{{ $index + 0 }}" 
+                                            <input class="form-check-input" type="checkbox" name="tag_{{ $index + 9 }}" id="tag_{{ $index + 9 }}" 
                                                 value="{{ $tag }}" {{ isset($filter[$tag]) ? 'checked' : '' }}>
-                                            <label class="form-check-label" for="tag_{{ $index + 6 }}">{{ $tag }}</label>
+                                            <label class="form-check-label" for="tag_{{ $index + 9 }}">{{ $tag }}</label>
                                         </div>
                                     @endforeach
                                 </div>

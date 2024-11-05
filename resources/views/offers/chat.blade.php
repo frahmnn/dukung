@@ -39,9 +39,8 @@
 
                             </div>
                         </div>
-
-                        <?php if ($withproposal) : ?>
-                            <?php if ($chatroom != null) : ?>
+                        <?php if ($chatroom != null) : ?>
+                            <?php if ($withproposal) : ?>
                                 <?php if ($grantproposal == 0) : ?>
                                     <form method="POST" action="<?php echo route('offer.grantproposal', ['offer' => $offer, 'chatroom' => $chatroom]); ?>" autocomplete="off" onsubmit="return confirm('Berikan akses ke proposal? Setelah dibuka, akses proposal tidak bisa ditutup lagi.');">@csrf
                                         <button type="submit" class="btn btn-primary btn-sm mb-2">Buka Akses Proposal</button>
@@ -49,13 +48,14 @@
                                 <?php else : ?>
                                     <p class="text-success">Akses proposal tersedia</p>
                                 <?php endif; ?>
-
-                                <?php if (!$thanked) : ?>
-                                    <form method="POST" action="<?php echo route('offer.thank', ['offer' => $offer, 'chatroom' => $chatroom]); ?>" autocomplete="off">@csrf
-                                        <button type="submit" class="btn btn-success btn-sm mb-2">Beri Terima Kasih</button>
-                                    </form>
-                                <?php endif; ?>
-                            <?php else : ?>
+                            <?php if (!$thanked) : ?>
+                                <form method="POST" action="<?php echo route('offer.thank', ['offer' => $offer, 'chatroom' => $chatroom]); ?>" autocomplete="off">@csrf
+                                    <button type="submit" class="btn btn-success btn-sm mb-2">Beri Terima Kasih</button>
+                                </form>
+                            <?php endif; ?>
+                        <?php endif; ?>
+                        <?php else : ?>
+                            <?php if ($withproposal) : ?>
                                 <?php if ($grantproposal != 0) : ?>
                                     <a href="<?php echo route('offer.proposal', $offer); ?>" class="btn btn-info btn-sm mb-2">Lihat Proposal</a>
                                 <?php endif; ?>

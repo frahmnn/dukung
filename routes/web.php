@@ -14,6 +14,8 @@ use App\Http\Middleware\Owner;
 
 Auth::routes(['verify'=>true]);
 
+Route::get(     '/dashboard', function () {return view('dashboard');})->middleware(['auth', 'verified'])->name(    'dashboard');  
+
 Route::get(     "/",                                    [Controller::class,         "index"])->name(                "index");
 Route::get(     "/offer/{offer}",                       [OfferController::class,    "offer"])->name(                "offer.offer");
 Route::get(     "/search",                              [Controller::class,         "search"])->name(               "search");

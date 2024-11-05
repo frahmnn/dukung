@@ -22,6 +22,8 @@ class Controller
 
     public function offer($offer){
         $offer = Offer::find($offer);
+        if(!$offer){
+            return redirect()->route('index');}
         if (date('Y-m-d', strtotime($offer->closed_date)) < date('Y-m-d')) {
             return redirect()->route("index");}
         $interested = Auth::guest() ? false : Chatroom::where("offer", $offer->id)->where("interestee", Auth::user()->id)->exists();
