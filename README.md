@@ -4,7 +4,9 @@
 
 Ini adalah dokumentasi Project. Dokumentasi penggunaan apikasi dapat ditemukan di situs Live bagian "Bantuan." *Dukung* versi Production dapat diakses di https://dukung.arifrahman.serv00.net.
 
-- Gunakan email "admin@admin.admin" dan password "aaaaaaaa" Untuk mengakses akun admin.
+- Gunakan email `admin@admin.admin` dan password `aaaaaaaa` Untuk mengakses akun admin.
+- Pusher Sandbox Plan membatasi jumlah push yang dapat dilakukan hingga 200.000 request per hari. Harap diperhatikan batasan ini.
+- Google SMTP Free Plan memungkinkan pengiriman hingga 500 pesan per hari. Pastikan untuk memperhatikan batasan ini ketika mengelola pengiriman email.
 - Beberapa provider internet dapat memicu error "Maximum execution time of 30 seconds exceeded" saat meminta verifikasi email. Mohon untuk mengganti provider internet saat terdapat error, atau akses melalui https://dukung.arifrahman.serv00.net/zzcheatemail untuk memverifikasi semua email.
 
 ## Dependensi Proyek
@@ -34,6 +36,18 @@ Ini adalah dokumentasi Project. Dokumentasi penggunaan apikasi dapat ditemukan d
 Pastikan konfigurasi berikut ditambahkan pada file `php.ini` di environment local Anda agar aplikasi dapat mengakomodasi ukuran maksimal file upload:<br>
 upload_max_filesize = 50M<br>
 post_max_size = 50M<br>
+
+Untuk memastikan akses langsung ke folder *storage* untuk gambar dan file lainnya di proyek *Dukung*, pastikan menjalankan perintah-perintah berikut di *Command Prompt* pada *localhost*:
+
+### Membuat Symbolic Link untuk Direktori Penyimpanan
+
+Gunakan perintah di bawah ini untuk membuat *symbolic link* agar file yang diunggah dapat diakses melalui folder `public`. Sesuaikan `path\menuju\dukung` dengan jalur proyek Anda.<br>
+mklink /d path\menuju\dukung\public\images path\menuju\dukung\storage\app\private\images<br>
+mklink /d path\menuju\dukung\public\proposals path\menuju\dukung\storage\app\private\proposals<br>
+mklink /d path\menuju\dukung\public\verifications path\menuju\dukung\storage\app\private\verifications<br>
+
+
+Pastikan menjalankan perintah ini dengan izin administrator, karena `mklink` memerlukan hak akses administrator di *Windows*.
 
 You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
