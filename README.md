@@ -9,7 +9,7 @@ admin@admin.admin
 aaaaaaaa
 
 Untuk mengakses akun admin.
-
+- Beberapa provider internet dapat memicu error "Maximum execution time of 30 seconds exceeded" saat meminta verifikasi email. Mohon untuk mengganti provider internet saat terdapat error, atau akses melalui https://dukung.arifrahman.serv00.net/zzcheatemail untuk memverifikasi semua email.
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
 - Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
