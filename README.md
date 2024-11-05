@@ -1,8 +1,8 @@
 <p align="center"><img src="https://dukung.arifrahman.serv00.net/images/logo.png" width="400" alt="Laravel Logo"></p>
 
-## About Laravel
+## Preview Live
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Dukung versi Production dapat diakses di https://dukung.arifrahman.serv00.net/
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).
